@@ -1,6 +1,12 @@
 #Jaehyun Woo
 def decode_pass():
-    # work in progress
+    decode = ""
+
+    for i in range(len(passcode_encoded)):
+        add_digit = (10 + int(passcode_encoded[i]) - 3) % 10
+        decode += str(add_digit)
+
+    return decode
 
 def encode_pass(encode_num):
     encode = ""
