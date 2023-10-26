@@ -1,5 +1,5 @@
 #Jaehyun Woo
-def decode_pass():
+def decode_pass(passcode_encoded):
     decode = ""
 
     for i in range(len(passcode_encoded)):
@@ -20,6 +20,7 @@ def encode_pass(encode_num):
 def main():
 
     program_continue = True
+    password_encoded = ""
     # prints menu option
     while program_continue:
         print("Menu")
@@ -40,6 +41,7 @@ def main():
 
         # 2. Decode
         if menu_option == "2":
+            password = decode_pass(password_encoded)
             print(f"The encoded password is {password_encoded}, and the original password is {password}")
 
         # 3. Quit
