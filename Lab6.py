@@ -1,6 +1,6 @@
 #Jaehyun Woo
-
-
+def decode_pass():
+    # work in progress
 
 def encode_pass(encode_num):
     encode = ""
